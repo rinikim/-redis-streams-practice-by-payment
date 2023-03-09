@@ -29,6 +29,7 @@ public class OrderEventStreamListener implements StreamListener<String, MapRecor
         // 결제 관련 로직 처리
         // ...
 
+        // 결제가 실행될 때마다 증가되는 값
         String paymentIdStr = Integer.toString(paymentProcessId++);
 
         // 결제 완료 이벤트 발행
